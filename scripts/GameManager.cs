@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
       var drag = Random.Range(0f, 2f);
 
       var hazard = Instantiate(hazardPrefab, new Vector3(x, 11, 0), Quartenion.identity);
-
+      hazard.GetComponent<Rigidbody>().drag = drag;
     }
   }
 }
