@@ -12,4 +12,9 @@ public class GameManager : MonoBehaviour
   }
 
   private IEnumerator SpawnHazards()
+  {
+    var hazardToSpawn = Random.Range(1, 4);
+
+    for (int i = 0; i < hazardToSpawn; i++)
+  }
 }
