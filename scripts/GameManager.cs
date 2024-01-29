@@ -23,5 +23,9 @@ public class GameManager : MonoBehaviour
       var hazard = Instantiate(hazardPrefab, new Vector3(x, 11, 0), Quartenion.identity);
       hazard.GetComponent<Rigidbody>().drag = drag;
     }
+
+    yield return new WaitForSeconds(1,5f);
+
+    yield return SpawnHazards();
   }
 }
