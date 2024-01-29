@@ -11,4 +11,5 @@ public class GameManager : MonoBehaviour
     StartCoroutine(SpawnHazards());
   }
 
+  private IEnumerator SpawnHazards()
 }
