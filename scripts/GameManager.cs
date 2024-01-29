@@ -6,4 +6,9 @@ public class GameManager : MonoBehaviour
 {
   public GameObject hazardPrefab;
   // Start is called before the first frame update
+  void Start()
+  {
+    StartCoroutine(SpawnHazards());
+  }
+
 }
