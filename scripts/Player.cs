@@ -23,4 +23,12 @@ public class Player : MonoBehaviour {
       rb.AddForce(new Vector3(horizontalInput * forceMultiplier, 0, 0));
     }
   }
+
+  private void OnCollisionEnter(Collision collision)
+  {
+    if (collision.gameObject.CompareTag("Hazard"))
+    {
+      Destroy(gameObject);
+    }
+  }
 }
