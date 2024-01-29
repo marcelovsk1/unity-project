@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
       var x = Random.Range(-7 ,7);
       var drag = Random.Range(0f, 2f);
 
+      var hazard = Instantiate(hazardPrefab, new Vector3(x, 11, 0), Quartenion.identity);
 
     }
   }
