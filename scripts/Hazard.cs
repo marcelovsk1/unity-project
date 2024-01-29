@@ -13,4 +13,9 @@ public class Hazard : MonoBehaviour {
   void private void Update() {
     transform.Rotate(rotation);
   }
+
+  void private void OnCollisionEnter(Collision collision)
+  {
+    Destroy(gameObject);
+  }
 }
