@@ -12,4 +12,15 @@ public class Player : MonoBehaviour {
   {
     rb = GetComponent<Rigidbody>();
   }
+
+  // Update is called once per frame
+  void Update()
+  {
+    var horizontalInput = Input.GetAxis("Horizontal");
+
+    if (GetComponent<Rigidbody>().velocity.magnitude <= 5f)
+    {
+      rb.AddForce(new Vector3(horizontalInput * forceMultiplier, 0, 0));
+    }
+  }
 }
