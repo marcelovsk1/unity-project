@@ -9,4 +9,8 @@ public class Hazard : MonoBehaviour {
    var xRotation = Random.Range(0.2f, 1f);
    rotation = new Vector3(1,0);
   }
+
+  void private void Update() {
+    transform.Rotate(rotation);
+  }
 }
