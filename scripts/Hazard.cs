@@ -4,4 +4,6 @@ using UnityEngine;
 
 public class Hazard : MonoBehaviour {
 
+  Vector3 rotation;
+
 }
