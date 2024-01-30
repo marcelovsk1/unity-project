@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
   public GameObject hazardPrefab;
   // Start is called before the first frame update
   public int maxHazardsToSpawn = 3;
+  public TMPro.TextMeshPro scoreText;
   void Start()
   {
     StartCoroutine(SpawnHazards());
