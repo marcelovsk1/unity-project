@@ -8,6 +8,12 @@ public class GameManager : MonoBehaviour
   // Start is called before the first frame update
   public int maxHazardsToSpawn = 3;
   public TMPro.TextMeshPro scoreText;
+
+  private int score;
+  private float timer;
+  private static bool gameOver;
+
+
   void Start()
   {
     StartCoroutine(SpawnHazards());
