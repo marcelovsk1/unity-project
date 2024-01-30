@@ -23,6 +23,9 @@ public class GameManager : MonoBehaviour
   {
     if (gameOver)
       return;
+    timer += Time.deltaTime;
+
+    if(timer >= 1f)
   }
 
   private IEnumerator SpawnHazards()
