@@ -19,6 +19,12 @@ public class GameManager : MonoBehaviour
     StartCoroutine(SpawnHazards());
   }
 
+  private void Update()
+  {
+    if (gameOver)
+      return;
+  }
+
   private IEnumerator SpawnHazards()
   {
     var hazardToSpawn = Random.Range(1, 4);
