@@ -26,6 +26,12 @@ public class GameManager : MonoBehaviour
     timer += Time.deltaTime;
 
     if(timer >= 1f)
+    {
+      score++;
+      scoreText.text = score.ToString();
+
+      timer = 0;
+    }
   }
 
   private IEnumerator SpawnHazards()
@@ -44,5 +50,10 @@ public class GameManager : MonoBehaviour
     yield return new WaitForSeconds(1,5f);
 
     yield return SpawnHazards();
+  }
+
+  public static void GameOver()
+  {
+    gameOver = true;
   }
 }
