@@ -9,5 +9,6 @@ public class coin : MonoBehaviour
   void Start()
   {
     var zRotation = Random.Range(0.1f, 0.3f);
+    rotation = new Vector3(0, 0, -zRotation);
   }
 }
