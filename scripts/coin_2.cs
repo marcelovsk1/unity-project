@@ -11,4 +11,6 @@ public class coin_2 : MonoBehaviour
     var zRotation = Random.Range(0.01f, 0.05f);
     rotation = new Vector3(0, 0, -zRotation);
   }
+
+  // Update is called once per frame
 }
